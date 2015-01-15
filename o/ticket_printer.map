@@ -1,0 +1,1428 @@
+Archive member included because of file (symbol)
+
+c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_addsubdf3.o)
+                              o\main.o (__aeabi_ui2d)
+c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_muldivdf3.o)
+                              o\main.o (__aeabi_dmul)
+c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_fixunsdfsi.o)
+                              o\main.o (__aeabi_d2uiz)
+c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_truncdfsf2.o)
+                              o\main.o (__aeabi_d2f)
+c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_addsubsf3.o)
+                              o\main.o (__aeabi_ui2f)
+c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_fixunsdfdi.o)
+                              C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libfs.so (__aeabi_d2ulz)
+c:\program files\ept-tools\ept-sdk\sourcery g++ lite\bin\../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+                              c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o (__libc_csu_fini)
+
+Allocating common symbols
+Common symbol       size              file
+
+line_menu           0x7d2             o\main.o
+DevStat             0x198             o\main.o
+hDprinterHandle     0x4               o\main.o
+hRS232Handle        0x4               o\main.o
+STinfo              0x4               o\main.o
+station_menu        0x3ea             o\main.o
+Com1RcvBuf2         0x4b0             o\shell.o
+Linfo               0x4               o\main.o
+Tinfo               0x7f              o\main.o
+OPinfo              0x4               o\main.o
+CardInfo            0x2c              o\main.o
+ShellComms          0x230             o\shell.o
+dbuf                0x64              o\main.o
+Com1SndBuf          0x4b0             o\shell.o
+Com1RcvBuf          0x4b0             o\shell.o
+
+Discarded input sections
+
+ .note.ABI-tag  0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+ .rodata.cst4   0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+ .ARM.extab     0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+ .data          0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+ .bss           0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+ .note.GNU-stack
+                0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+ .data          0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+ .bss           0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+ .ARM.extab     0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+ .note.GNU-stack
+                0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+ .data          0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+ .ARM.extab     0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+ .note.GNU-stack
+                0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+ .text          0x00000000        0x0 o\main.o
+ .data          0x00000000        0x0 o\main.o
+ .bss           0x00000000        0x0 o\main.o
+ .ARM.extab.text.Cal_Interval_Sec
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.card_youhui_process
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.ic_card_process
+                0x00000000        0x0 o\main.o
+ .text.query_capacity
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.query_capacity
+                0x00000000        0x0 o\main.o
+ .ARM.exidx.text.query_capacity
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.set_pos_init
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.format_process
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.generate_backup_record_file
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.generate_record_file
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.send_backup_record_process
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.send_record_process
+                0x00000000        0x0 o\main.o
+ .text.invalid_ticket_process
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.invalid_ticket_process
+                0x00000000        0x0 o\main.o
+ .ARM.exidx.text.invalid_ticket_process
+                0x00000000        0x0 o\main.o
+ .text.mdata    0x00000000        0x0 o\main.o
+ .ARM.extab.text.mdata
+                0x00000000        0x0 o\main.o
+ .ARM.exidx.text.mdata
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.print_ticket
+                0x00000000        0x0 o\main.o
+ .text.printer_test
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.printer_test
+                0x00000000        0x0 o\main.o
+ .ARM.exidx.text.printer_test
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.set_ticket_number
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.set_pos_number
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.set_banci
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.choose_line
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.set_youhui_zhekou
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.choose_end_station
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.choose_start_station
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.line_number_verify
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.bus_number_verify
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.operator_login
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.TimeFormatChk
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.TimeModify
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.msystem
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.system_check
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.card_yuepiao_process
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.generate_summary_info
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.print_summary
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.generate_ticket_info
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.ic_yuepiaocard_process
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.sell_ticket
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.param_init
+                0x00000000        0x0 o\main.o
+ .ARM.extab.text.main
+                0x00000000        0x0 o\main.o
+ .data.confirm_menu
+                0x00000000        0x0 o\main.o
+ .data.data_menu
+                0x00000000        0x0 o\main.o
+ .note.GNU-stack
+                0x00000000        0x0 o\main.o
+ .text          0x00000000        0x0 o\NormalData.o
+ .data          0x00000000        0x0 o\NormalData.o
+ .bss           0x00000000        0x0 o\NormalData.o
+ .note.GNU-stack
+                0x00000000        0x0 o\NormalData.o
+ .text          0x00000000        0x0 o\shell.o
+ .data          0x00000000        0x0 o\shell.o
+ .bss           0x00000000        0x0 o\shell.o
+ .text.UpdateCRC16
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.UpdateCRC16
+                0x00000000        0x0 o\shell.o
+ .ARM.exidx.text.UpdateCRC16
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.Cal_CRC16
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.test_crc16
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.InitCommands
+                0x00000000        0x0 o\shell.o
+ .text.armgetch3
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.armgetch3
+                0x00000000        0x0 o\shell.o
+ .ARM.exidx.text.armgetch3
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.armgetch2
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.armgetch
+                0x00000000        0x0 o\shell.o
+ .text.armputch
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.armputch
+                0x00000000        0x0 o\shell.o
+ .ARM.exidx.text.armputch
+                0x00000000        0x0 o\shell.o
+ .text.arm_send_hex
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.arm_send_hex
+                0x00000000        0x0 o\shell.o
+ .ARM.exidx.text.arm_send_hex
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.armputs
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.crf_func
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.del_func
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.dir_func
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.HelloFunc
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.HelpFunc
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.fput_func
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.CommandAnalys
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.communication
+                0x00000000        0x0 o\shell.o
+ .ARM.extab.text.fget_func
+                0x00000000        0x0 o\shell.o
+ .note.GNU-stack
+                0x00000000        0x0 o\shell.o
+ .text          0x00000000        0x0 o\ydt.o
+ .data          0x00000000        0x0 o\ydt.o
+ .bss           0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.CheckTimeFormat
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.ascii_to_hex
+                0x00000000        0x0 o\ydt.o
+ .text.bcdtohex
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.bcdtohex
+                0x00000000        0x0 o\ydt.o
+ .ARM.exidx.text.bcdtohex
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.hextobcd
+                0x00000000        0x0 o\ydt.o
+ .text.ascii    0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.ascii
+                0x00000000        0x0 o\ydt.o
+ .ARM.exidx.text.ascii
+                0x00000000        0x0 o\ydt.o
+ .text.HextoBcd
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.HextoBcd
+                0x00000000        0x0 o\ydt.o
+ .ARM.exidx.text.HextoBcd
+                0x00000000        0x0 o\ydt.o
+ .text.atoh     0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.atoh
+                0x00000000        0x0 o\ydt.o
+ .ARM.exidx.text.atoh
+                0x00000000        0x0 o\ydt.o
+ .text.ascii_comm
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.ascii_comm
+                0x00000000        0x0 o\ydt.o
+ .ARM.exidx.text.ascii_comm
+                0x00000000        0x0 o\ydt.o
+ .text.Cal_Crc  0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.Cal_Crc
+                0x00000000        0x0 o\ydt.o
+ .ARM.exidx.text.Cal_Crc
+                0x00000000        0x0 o\ydt.o
+ .text.cal_crc  0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.cal_crc
+                0x00000000        0x0 o\ydt.o
+ .ARM.exidx.text.cal_crc
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.crc_check
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.comm_add_end
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.Is_Leap
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.cal_sec
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.sleep_ms
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.SleepMs
+                0x00000000        0x0 o\ydt.o
+ .text.beep     0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.beep
+                0x00000000        0x0 o\ydt.o
+ .ARM.exidx.text.beep
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.beep_failed
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.beep_success
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.com1_query_ch
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.com1_gets_keyboard
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.com1_gets
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.uart1_buf_flush
+                0x00000000        0x0 o\ydt.o
+ .text.com1_send_hex
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.com1_send_hex
+                0x00000000        0x0 o\ydt.o
+ .ARM.exidx.text.com1_send_hex
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.com1_snd_and_rcv2
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.com1_snd_and_rcv
+                0x00000000        0x0 o\ydt.o
+ .text.htoa     0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.htoa
+                0x00000000        0x0 o\ydt.o
+ .ARM.exidx.text.htoa
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.lcddisperr
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.store_record
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.ReadParam
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.WriteParam
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.param_factory_default
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.lcddisp
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.get_input_str
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.Modify_Time
+                0x00000000        0x0 o\ydt.o
+ .ARM.extab.text.Get_Time
+                0x00000000        0x0 o\ydt.o
+ .note.GNU-stack
+                0x00000000        0x0 o\ydt.o
+ .data          0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_addsubdf3.o)
+ .note.GNU-stack
+                0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_muldivdf3.o)
+ .note.GNU-stack
+                0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_muldivdf3.o)
+ .data          0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_fixunsdfsi.o)
+ .bss           0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_fixunsdfsi.o)
+ .note.GNU-stack
+                0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_fixunsdfsi.o)
+ .data          0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_truncdfsf2.o)
+ .bss           0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_truncdfsf2.o)
+ .note.GNU-stack
+                0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_truncdfsf2.o)
+ .data          0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_addsubsf3.o)
+ .bss           0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_addsubsf3.o)
+ .note.GNU-stack
+                0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_addsubsf3.o)
+ .data          0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_fixunsdfdi.o)
+ .bss           0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_fixunsdfdi.o)
+ .ARM.extab     0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_fixunsdfdi.o)
+ .note.GNU-stack
+                0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_fixunsdfdi.o)
+ .data          0x00000000        0x0 c:\program files\ept-tools\ept-sdk\sourcery g++ lite\bin\../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .bss           0x00000000        0x0 c:\program files\ept-tools\ept-sdk\sourcery g++ lite\bin\../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .ARM.extab     0x00000000        0x0 c:\program files\ept-tools\ept-sdk\sourcery g++ lite\bin\../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x00000000        0x0 c:\program files\ept-tools\ept-sdk\sourcery g++ lite\bin\../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .text          0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtend.o
+ .data          0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtend.o
+ .bss           0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtend.o
+ .note.GNU-stack
+                0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtend.o
+ .text          0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+ .data          0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+ .bss           0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+ .ARM.extab.init
+                0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+ .ARM.extab.fini
+                0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+ .note.GNU-stack
+                0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+LOAD c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+LOAD c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+LOAD o\main.o
+LOAD o\NormalData.o
+LOAD o\shell.o
+LOAD o\ydt.o
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libcolorui.a
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libdigitalled.a
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libjpeg.a
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libsignpanel.a
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libSM.a
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libalgorithm.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libAt1604.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libAt1608.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libat24cxx.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libAt45d041.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libaudio.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libbaseinfo.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libbt.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libcashbox.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libcfginfo.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libcommon.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libCommu.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libDhcp.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libfam.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libfindhidcomdev.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libfs.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libFsk.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libGps.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libGsm.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libIccard.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libissl.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libjpeg.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libMagcard.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libMifs.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libmodem.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libpara.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libpinpad.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libpl2303.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libpm.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libPppdial.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libPrinter.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libscan.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libsfs.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libSim4428.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libSim4442.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libsysserv.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libtms.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libui.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\EPT-A9L\so\libvoice.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\Sourcery G++ Lite\arm-none-linux-gnueabi\libc\usr\lib/librt.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\Sourcery G++ Lite\arm-none-linux-gnueabi\libc\usr\lib/libpthread.so
+START GROUP
+LOAD c:\program files\ept-tools\ept-sdk\sourcery g++ lite\bin\../arm-none-linux-gnueabi/libc/lib/libpthread.so.0
+LOAD c:\program files\ept-tools\ept-sdk\sourcery g++ lite\bin\../arm-none-linux-gnueabi/libc/usr/lib/libpthread_nonshared.a
+END GROUP
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\Sourcery G++ Lite\arm-none-linux-gnueabi\libc\usr\lib/libdl.so
+LOAD c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a
+LOAD c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/lib/libgcc_s.so
+LOAD C:\Program Files\EPT-Tools\EPT-SDK\Sourcery G++ Lite\arm-none-linux-gnueabi\libc\usr\lib/libc.so
+START GROUP
+LOAD c:\program files\ept-tools\ept-sdk\sourcery g++ lite\bin\../arm-none-linux-gnueabi/libc/lib/libc.so.6
+LOAD c:\program files\ept-tools\ept-sdk\sourcery g++ lite\bin\../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a
+LOAD c:\program files\ept-tools\ept-sdk\sourcery g++ lite\bin\../arm-none-linux-gnueabi/libc/lib/ld-linux.so.3
+END GROUP
+LOAD c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a
+LOAD c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/lib/libgcc_s.so
+LOAD c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtend.o
+LOAD c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+                0x00008000                PROVIDE (__executable_start, 0x8000)
+                0x00008114                . = (0x8000 + SIZEOF_HEADERS)
+
+.interp         0x00008114       0x13
+ *(.interp)
+ .interp        0x00008114       0x13 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash
+ *(.hash)
+
+.gnu.hash       0x00008128      0x344
+ *(.gnu.hash)
+ .gnu.hash      0x00008128      0x344 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.dynsym         0x0000846c      0x460
+ *(.dynsym)
+ .dynsym        0x0000846c      0x460 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.dynstr         0x000088cc      0x45c
+ *(.dynstr)
+ .dynstr        0x000088cc      0x45c c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.gnu.version    0x00008d28       0x8c
+ *(.gnu.version)
+ .gnu.version   0x00008d28       0x8c c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.gnu.version_d  0x00008db4        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.gnu.version_r  0x00008db4       0xe0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00008db4       0xe0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.rel.dyn        0x00008e94        0x8
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x00008e94        0x8 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ .rel.bss       0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.rel.ifunc.dyn
+ *(.rel.ifunc.*)
+
+.rela.dyn
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+
+.rela.ifunc.dyn
+ *(.rela.ifunc.*)
+
+.rel.plt        0x00008e9c      0x208
+ *(.rel.plt)
+ .rel.plt       0x00008e9c      0x208 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.rela.plt
+ *(.rela.plt)
+
+.init           0x000090a4        0xc
+ *(.init)
+ .init          0x000090a4        0x8 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+                0x000090a4                _init
+ .init          0x000090ac        0x4 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+
+.plt            0x000090b0      0x320
+ *(.plt)
+ .plt           0x000090b0      0x320 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+                0x000090c4                EA_ucPFReadRec@@FFS_1.0
+                0x000090d0                EA_ucPFDel@@FFS_1.0
+                0x000090dc                EA_ucGetPassTimer@@COMMON_1.0
+                0x000090e8                EA_i64CfsRead@@FFS_1.0
+                0x000090f4                abort@@GLIBC_2.4
+                0x00009100                EA_pvMalloc@@COMMON_1.0
+                0x0000910c                __libc_start_main@@GLIBC_2.4
+                0x00009118                EA_ucPFOpen@@FFS_1.0
+                0x00009124                EA_vTextOut@@UI_1.0
+                0x0000913c                EA_ucGetDateTime@@COMMON_1.0
+                0x00009148                __strcat_chk@@GLIBC_2.4
+                0x00009154                EA_ucReadDevice@@COMMON_1.0
+                0x00009160                strtod@@GLIBC_2.4
+                0x0000916c                strchr@@GLIBC_2.4
+                0x00009178                EA_vFree@@COMMON_1.0
+                0x00009184                EA_ucGetInputStr@@UI_1.0
+                0x00009190                EA_ucLinePrinter@@PRINT_1.0
+                0x0000919c                EA_ucInitPrinter@@PRINT_1.0
+                0x000091a8                EA_vDelayMs@@COMMON_1.0
+                0x000091b4                memset@@GLIBC_2.4
+                0x000091c0                EA_iCfsFtruncate@@FFS_1.0
+                0x000091cc                EA_ucSetDateTime@@COMMON_1.0
+                0x000091d8                EA_ucWriteParamFile@@PARA_1.0
+                0x000091e4                EA_ucPFClose@@FFS_1.0
+                0x000091f0                EA_i64CfsWrite@@FFS_1.0
+                0x000091fc                EA_ucPFCreateLoop@@FFS_1.0
+                0x00009208                EA_iCfsGetFileSystemInfo@@FFS_1.0
+                0x00009214                EA_vDisp@@UI_1.0
+                0x00009220                strlen@@GLIBC_2.4
+                0x0000922c                sscanf@@GLIBC_2.4
+                0x00009238                EA_uiInkey@@UI_1.0
+                0x00009244                EA_ucWriteDevice@@COMMON_1.0
+                0x00009250                EA_iCfsOpen@@FFS_1.0
+                0x0000925c                memcpy@@GLIBC_2.4
+                0x00009268                EA_ucPFInfo@@FFS_1.0
+                0x00009274                EA_iCfsFsync@@FFS_1.0
+                0x00009280                EA_vCls@@UI_1.0
+                0x0000928c                strcpy@@GLIBC_2.4
+                0x00009298                EA_ucPFWriteRec@@FFS_1.0
+                0x000092a4                EA_vDisplay@@UI_1.0
+                0x000092b0                EA_ucInitRS232@@COMMON_1.0
+                0x000092bc                EA_iCfsDelete@@FFS_1.0
+                0x000092c8                EA_ucSetInverse@@UI_1.0
+                0x000092d4                strstr@@GLIBC_2.4
+                0x000092e0                EA_ucKBHit@@UI_1.0
+                0x000092ec                EA_ucSetPrinterFormat@@PRINT_1.0
+                0x000092f8                EA_ucCreateParamFile@@PARA_1.0
+                0x00009304                EA_vBeepMs@@COMMON_1.0
+                0x00009310                EA_iCfsGetFileNum@@FFS_1.0
+                0x0000931c                EA_ucOpenDevice@@COMMON_1.0
+                0x00009328                EA_uiInkeyMs@@UI_1.0
+                0x00009334                EA_ucCloseDevice@@COMMON_1.0
+                0x00009340                EA_ucResetTimer@@COMMON_1.0
+                0x0000934c                EA_ucReadParamFile@@PARA_1.0
+                0x00009358                EA_i64CfsGetFileSize@@FFS_1.0
+                0x00009364                EA_vDelay@@COMMON_1.0
+                0x00009370                EA_iCfsClose@@FFS_1.0
+                0x0000937c                __sprintf_chk@@GLIBC_2.4
+                0x00009388                EA_ucPFCreate@@FFS_1.0
+                0x00009394                EA_ucClearRS232@@COMMON_1.0
+                0x000093a0                __strcpy_chk@@GLIBC_2.4
+                0x000093ac                strcmp@@GLIBC_2.4
+                0x000093b8                EA_ucCloseTimer@@COMMON_1.0
+                0x000093c4                EA_ucCreateTimer@@COMMON_1.0
+
+.text           0x000093d0     0xa500
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x000093d0       0x38 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+                0x000093d0                _start
+ .text          0x00009408       0x24 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+ .text          0x0000942c       0x4c c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+ .text.Cal_Interval_Sec
+                0x00009478      0x23c o\main.o
+                0x00009478                Cal_Interval_Sec
+ .text.card_youhui_process
+                0x000096b4      0x3c0 o\main.o
+                0x000096b4                card_youhui_process
+ .text.ic_card_process
+                0x00009a74      0x2b8 o\main.o
+                0x00009a74                ic_card_process
+ .text.set_pos_init
+                0x00009d2c      0x12c o\main.o
+                0x00009d2c                set_pos_init
+ .text.format_process
+                0x00009e58      0x1bc o\main.o
+                0x00009e58                format_process
+ .text.generate_backup_record_file
+                0x0000a014      0x264 o\main.o
+                0x0000a014                generate_backup_record_file
+ .text.generate_record_file
+                0x0000a278      0x27c o\main.o
+                0x0000a278                generate_record_file
+ .text.send_backup_record_process
+                0x0000a4f4       0xf4 o\main.o
+                0x0000a4f4                send_backup_record_process
+ .text.send_record_process
+                0x0000a5e8       0xf0 o\main.o
+                0x0000a5e8                send_record_process
+ .text.read_param_table
+                0x0000a6d8      0x920 o\main.o
+                0x0000a6d8                read_param_table
+ .text.print_ticket
+                0x0000aff8      0x51c o\main.o
+                0x0000aff8                print_ticket
+ .text.set_ticket_number
+                0x0000b514      0x15c o\main.o
+                0x0000b514                set_ticket_number
+ .text.set_pos_number
+                0x0000b670      0x10c o\main.o
+                0x0000b670                set_pos_number
+ .text.set_banci
+                0x0000b77c      0x160 o\main.o
+                0x0000b77c                set_banci
+ .text.choose_line
+                0x0000b8dc       0xb8 o\main.o
+                0x0000b8dc                choose_line
+ .text.set_youhui_zhekou
+                0x0000b994      0x164 o\main.o
+                0x0000b994                set_youhui_zhekou
+ .text.choose_end_station
+                0x0000baf8      0x3cc o\main.o
+                0x0000baf8                choose_end_station
+ .text.choose_start_station
+                0x0000bec4      0x278 o\main.o
+                0x0000bec4                choose_start_station
+ .text.line_number_verify
+                0x0000c13c       0xe4 o\main.o
+                0x0000c13c                line_number_verify
+ .text.bus_number_verify
+                0x0000c220      0x1f0 o\main.o
+                0x0000c220                bus_number_verify
+ .text.operator_login
+                0x0000c410      0x394 o\main.o
+                0x0000c410                operator_login
+ .text.TimeFormatChk
+                0x0000c7a4       0x30 o\main.o
+                0x0000c7a4                TimeFormatChk
+ .text.TimeModify
+                0x0000c7d4      0x1f0 o\main.o
+                0x0000c7d4                TimeModify
+ .text.msystem  0x0000c9c4      0x178 o\main.o
+                0x0000c9c4                msystem
+ .text.system_check
+                0x0000cb3c       0x50 o\main.o
+                0x0000cb3c                system_check
+ .text.card_yuepiao_process
+                0x0000cb8c      0x460 o\main.o
+                0x0000cb8c                card_yuepiao_process
+ .text.generate_summary_info
+                0x0000cfec      0x200 o\main.o
+                0x0000cfec                generate_summary_info
+ .text.print_summary
+                0x0000d1ec      0x5bc o\main.o
+                0x0000d1ec                print_summary
+ .text.query_today_summary
+                0x0000d7a8      0x9e4 o\main.o
+                0x0000d7a8                query_today_summary
+ .text.generate_ticket_info
+                0x0000e18c      0x26c o\main.o
+                0x0000e18c                generate_ticket_info
+ .text.ic_yuepiaocard_process
+                0x0000e3f8      0x344 o\main.o
+                0x0000e3f8                ic_yuepiaocard_process
+ .text.sell_ticket
+                0x0000e73c      0xa98 o\main.o
+                0x0000e73c                sell_ticket
+ .text.param_init
+                0x0000f1d4      0x280 o\main.o
+                0x0000f1d4                param_init
+ .text.main     0x0000f454       0xb0 o\main.o
+                0x0000f454                main
+ .text.Cal_CRC16
+                0x0000f504       0xcc o\shell.o
+                0x0000f504                Cal_CRC16
+ .text.test_crc16
+                0x0000f5d0       0x4c o\shell.o
+                0x0000f5d0                test_crc16
+ .text.InitCommands
+                0x0000f61c      0x160 o\shell.o
+                0x0000f61c                InitCommands
+ .text.armgetch2
+                0x0000f77c       0xa0 o\shell.o
+                0x0000f77c                armgetch2
+ .text.armgetch
+                0x0000f81c       0x78 o\shell.o
+                0x0000f81c                armgetch
+ .text.armputs  0x0000f894       0x2c o\shell.o
+                0x0000f894                armputs
+ .text.crf_func
+                0x0000f8c0      0x188 o\shell.o
+                0x0000f8c0                crf_func
+ .text.del_func
+                0x0000fa48       0x74 o\shell.o
+                0x0000fa48                del_func
+ .text.dir_func
+                0x0000fabc       0xb8 o\shell.o
+                0x0000fabc                dir_func
+ .text.HelloFunc
+                0x0000fb74       0x58 o\shell.o
+                0x0000fb74                HelloFunc
+ .text.HelpFunc
+                0x0000fbcc       0x80 o\shell.o
+                0x0000fbcc                HelpFunc
+ .text.fput_func
+                0x0000fc4c      0x3f0 o\shell.o
+                0x0000fc4c                fput_func
+ .text.CommandAnalys
+                0x0001003c      0x168 o\shell.o
+                0x0001003c                CommandAnalys
+ .text.communication
+                0x000101a4      0x238 o\shell.o
+                0x000101a4                communication
+ .text.fget_func
+                0x000103dc      0x3fc o\shell.o
+                0x000103dc                fget_func
+ .text.CheckTimeFormat
+                0x000107d8       0x84 o\ydt.o
+                0x000107d8                CheckTimeFormat
+ .text.ascii_to_hex
+                0x0001085c       0x64 o\ydt.o
+                0x0001085c                ascii_to_hex
+ .text.hextobcd
+                0x000108c0       0x24 o\ydt.o
+                0x000108c0                hextobcd
+ .text.crc_check
+                0x000108e4       0xa8 o\ydt.o
+                0x000108e4                crc_check
+ .text.comm_add_end
+                0x0001098c       0x90 o\ydt.o
+                0x0001098c                comm_add_end
+ .text.Is_Leap  0x00010a1c       0x54 o\ydt.o
+                0x00010a1c                Is_Leap
+ .text.cal_sec  0x00010a70      0x1ac o\ydt.o
+                0x00010a70                cal_sec
+ .text.sleep_ms
+                0x00010c1c        0x4 o\ydt.o
+                0x00010c1c                sleep_ms
+ .text.SleepMs  0x00010c20        0x4 o\ydt.o
+                0x00010c20                SleepMs
+ .text.beep_failed
+                0x00010c24       0x30 o\ydt.o
+                0x00010c24                beep_failed
+ .text.beep_success
+                0x00010c54        0x8 o\ydt.o
+                0x00010c54                beep_success
+ .text.com1_query_ch
+                0x00010c5c       0x68 o\ydt.o
+                0x00010c5c                com1_query_ch
+ .text.com1_gets_keyboard
+                0x00010cc4      0x160 o\ydt.o
+                0x00010cc4                com1_gets_keyboard
+ .text.com1_gets
+                0x00010e24      0x110 o\ydt.o
+                0x00010e24                com1_gets
+ .text.uart1_buf_flush
+                0x00010f34       0x3c o\ydt.o
+                0x00010f34                uart1_buf_flush
+ .text.com1_snd_and_rcv2
+                0x00010f70       0xa8 o\ydt.o
+                0x00010f70                com1_snd_and_rcv2
+ .text.com1_snd_and_rcv
+                0x00011018       0xb4 o\ydt.o
+                0x00011018                com1_snd_and_rcv
+ .text.lcddisperr
+                0x000110cc       0x28 o\ydt.o
+                0x000110cc                lcddisperr
+ .text.store_record
+                0x000110f4       0xb8 o\ydt.o
+                0x000110f4                store_record
+ .text.ReadParam
+                0x000111ac       0x8c o\ydt.o
+                0x000111ac                ReadParam
+ .text.WriteParam
+                0x00011238       0xd4 o\ydt.o
+                0x00011238                WriteParam
+ .text.param_factory_default
+                0x0001130c      0x2b4 o\ydt.o
+                0x0001130c                param_factory_default
+ .text.lcddisp  0x000115c0        0x4 o\ydt.o
+                0x000115c0                lcddisp
+ .text.get_input_str
+                0x000115c4      0x458 o\ydt.o
+                0x000115c4                get_input_str
+ .text.browse_menu2
+                0x00011a1c      0x62c o\ydt.o
+                0x00011a1c                browse_menu2
+ .text.browse_menu
+                0x00012048      0x514 o\ydt.o
+                0x00012048                browse_menu
+ .text.Modify_Time
+                0x0001255c       0xb8 o\ydt.o
+                0x0001255c                Modify_Time
+ .text.Get_Time
+                0x00012614       0x90 o\ydt.o
+                0x00012614                Get_Time
+ .text.browse_menu_time
+                0x000126a4      0x5f0 o\ydt.o
+                0x000126a4                browse_menu_time
+ .text          0x00012c94      0x3b8 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_addsubdf3.o)
+                0x00012fd8                __floatundidf
+                0x00012f70                __floatsidf
+                0x00012f4c                __aeabi_ui2d
+                0x00012f70                __aeabi_i2d
+                0x00012f4c                __floatunsidf
+                0x00012c9c                __subdf3
+                0x00012fec                __floatdidf
+                0x00012ca0                __adddf3
+                0x00012fec                __aeabi_l2d
+                0x00012f98                __aeabi_f2d
+                0x00012fd8                __aeabi_ul2d
+                0x00012c94                __aeabi_drsub
+                0x00012f98                __extendsfdf2
+                0x00012ca0                __aeabi_dadd
+                0x00012c9c                __aeabi_dsub
+ .text          0x0001304c      0x470 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_muldivdf3.o)
+                0x0001304c                __muldf3
+                0x000132b8                __divdf3
+                0x0001304c                __aeabi_dmul
+                0x000132b8                __aeabi_ddiv
+ .text          0x000134bc       0x54 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_fixunsdfsi.o)
+                0x000134bc                __fixunsdfsi
+                0x000134bc                __aeabi_d2uiz
+ .text          0x00013510       0xa0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_truncdfsf2.o)
+                0x00013510                __aeabi_d2f
+                0x00013510                __truncdfsf2
+ .text          0x000135b0      0x250 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_addsubsf3.o)
+                0x000135bc                __aeabi_fadd
+                0x00013784                __aeabi_l2f
+                0x00013774                __aeabi_ul2f
+                0x000135b8                __subsf3
+                0x00013754                __floatsisf
+                0x000135bc                __addsf3
+                0x000135b0                __aeabi_frsub
+                0x00013784                __floatdisf
+                0x000135b8                __aeabi_fsub
+                0x0001374c                __aeabi_ui2f
+                0x00013754                __aeabi_i2f
+                0x0001374c                __floatunsisf
+                0x00013774                __floatundisf
+ .text          0x00013800       0x60 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_fixunsdfdi.o)
+                0x00013800                __aeabi_d2ulz
+                0x00013800                __fixunsdfdi
+ .text          0x00013860       0x70 c:\program files\ept-tools\ept-sdk\sourcery g++ lite\bin\../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+                0x00013860                __libc_csu_fini
+                0x00013864                __libc_csu_init
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.fini           0x000138d0        0x8
+ *(.fini)
+ .fini          0x000138d0        0x4 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+                0x000138d0                _fini
+ .fini          0x000138d4        0x4 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+                0x000138d8                PROVIDE (__etext, .)
+                0x000138d8                PROVIDE (_etext, .)
+                0x000138d8                PROVIDE (etext, .)
+
+.rodata         0x000138d8     0x1420
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x000138d8       0x24 o\main.o
+ .rodata.str1.4
+                0x000138fc      0xfd9 o\main.o
+                               0x1008 (size before relaxing)
+ *fill*         0x000148d5        0x3 00
+ .rodata.str1.4
+                0x000148d8      0x288 o\shell.o
+                                0x2ac (size before relaxing)
+ .rodata.days.6046
+                0x00014b60       0x34 o\ydt.o
+ .rodata.str1.4
+                0x00014b94      0x130 o\ydt.o
+                                0x1a4 (size before relaxing)
+ .rodata.days_leap.6047
+                0x00014cc4       0x34 o\ydt.o
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab      0x00014cf8       0x3c
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ .ARM.extab.text.read_param_table
+                0x00014cf8        0xc o\main.o
+ .ARM.extab.text.query_today_summary
+                0x00014d04        0xc o\main.o
+ .ARM.extab.text.browse_menu2
+                0x00014d10        0xc o\ydt.o
+ .ARM.extab.text.browse_menu
+                0x00014d1c        0xc o\ydt.o
+ .ARM.extab.text.browse_menu_time
+                0x00014d28        0xc o\ydt.o
+                0x00014d34                __exidx_start = .
+
+.ARM.exidx      0x00014d34      0x298
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x00014d44        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx     0x00014d44        0x8 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+ .ARM.exidx     0x00014d4c        0x8 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+                                 0x10 (size before relaxing)
+ .ARM.exidx.text.Cal_Interval_Sec
+                0x00014d54        0x8 o\main.o
+ .ARM.exidx.text.card_youhui_process
+                0x00014d5c        0x8 o\main.o
+ .ARM.exidx.text.ic_card_process
+                0x00014d64        0x8 o\main.o
+ .ARM.exidx.text.set_pos_init
+                0x00014d6c        0x8 o\main.o
+ .ARM.exidx.text.format_process
+                0x00014d74        0x8 o\main.o
+ .ARM.exidx.text.generate_backup_record_file
+                0x00014d7c        0x8 o\main.o
+ .ARM.exidx.text.generate_record_file
+                0x00014d84        0x8 o\main.o
+ .ARM.exidx.text.send_backup_record_process
+                0x00014d8c        0x8 o\main.o
+ .ARM.exidx.text.send_record_process
+                0x00014d94        0x0 o\main.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.read_param_table
+                0x00014d94        0x8 o\main.o
+ .ARM.exidx.text.print_ticket
+                0x00014d9c        0x8 o\main.o
+ .ARM.exidx.text.set_ticket_number
+                0x00014da4        0x8 o\main.o
+ .ARM.exidx.text.set_pos_number
+                0x00014dac        0x8 o\main.o
+ .ARM.exidx.text.set_banci
+                0x00014db4        0x8 o\main.o
+ .ARM.exidx.text.choose_line
+                0x00014dbc        0x8 o\main.o
+ .ARM.exidx.text.set_youhui_zhekou
+                0x00014dc4        0x8 o\main.o
+ .ARM.exidx.text.choose_end_station
+                0x00014dcc        0x8 o\main.o
+ .ARM.exidx.text.choose_start_station
+                0x00014dd4        0x8 o\main.o
+ .ARM.exidx.text.line_number_verify
+                0x00014ddc        0x8 o\main.o
+ .ARM.exidx.text.bus_number_verify
+                0x00014de4        0x8 o\main.o
+ .ARM.exidx.text.operator_login
+                0x00014dec        0x8 o\main.o
+ .ARM.exidx.text.TimeFormatChk
+                0x00014df4        0x8 o\main.o
+ .ARM.exidx.text.TimeModify
+                0x00014dfc        0x8 o\main.o
+ .ARM.exidx.text.msystem
+                0x00014e04        0x8 o\main.o
+ .ARM.exidx.text.system_check
+                0x00014e0c        0x8 o\main.o
+ .ARM.exidx.text.card_yuepiao_process
+                0x00014e14        0x8 o\main.o
+ .ARM.exidx.text.generate_summary_info
+                0x00014e1c        0x8 o\main.o
+ .ARM.exidx.text.print_summary
+                0x00014e24        0x8 o\main.o
+ .ARM.exidx.text.query_today_summary
+                0x00014e2c        0x8 o\main.o
+ .ARM.exidx.text.generate_ticket_info
+                0x00014e34        0x8 o\main.o
+ .ARM.exidx.text.ic_yuepiaocard_process
+                0x00014e3c        0x8 o\main.o
+ .ARM.exidx.text.sell_ticket
+                0x00014e44        0x8 o\main.o
+ .ARM.exidx.text.param_init
+                0x00014e4c        0x8 o\main.o
+ .ARM.exidx.text.main
+                0x00014e54        0x8 o\main.o
+ .ARM.exidx.text.Cal_CRC16
+                0x00014e5c        0x8 o\shell.o
+ .ARM.exidx.text.test_crc16
+                0x00014e64        0x8 o\shell.o
+ .ARM.exidx.text.InitCommands
+                0x00014e6c        0x8 o\shell.o
+ .ARM.exidx.text.armgetch2
+                0x00014e74        0x8 o\shell.o
+ .ARM.exidx.text.armgetch
+                0x00014e7c        0x8 o\shell.o
+ .ARM.exidx.text.armputs
+                0x00014e84        0x8 o\shell.o
+ .ARM.exidx.text.crf_func
+                0x00014e8c        0x8 o\shell.o
+ .ARM.exidx.text.del_func
+                0x00014e94        0x8 o\shell.o
+ .ARM.exidx.text.dir_func
+                0x00014e9c        0x8 o\shell.o
+ .ARM.exidx.text.HelloFunc
+                0x00014ea4        0x8 o\shell.o
+ .ARM.exidx.text.HelpFunc
+                0x00014eac        0x8 o\shell.o
+ .ARM.exidx.text.fput_func
+                0x00014eb4        0x8 o\shell.o
+ .ARM.exidx.text.CommandAnalys
+                0x00014ebc        0x8 o\shell.o
+ .ARM.exidx.text.communication
+                0x00014ec4        0x8 o\shell.o
+ .ARM.exidx.text.fget_func
+                0x00014ecc        0x8 o\shell.o
+ .ARM.exidx.text.CheckTimeFormat
+                0x00014ed4        0x8 o\ydt.o
+ .ARM.exidx.text.ascii_to_hex
+                0x00014edc        0x0 o\ydt.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.hextobcd
+                0x00014edc        0x0 o\ydt.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.crc_check
+                0x00014edc        0x8 o\ydt.o
+ .ARM.exidx.text.comm_add_end
+                0x00014ee4        0x0 o\ydt.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.Is_Leap
+                0x00014ee4        0x8 o\ydt.o
+ .ARM.exidx.text.cal_sec
+                0x00014eec        0x8 o\ydt.o
+ .ARM.exidx.text.sleep_ms
+                0x00014ef4        0x8 o\ydt.o
+ .ARM.exidx.text.SleepMs
+                0x00014efc        0x0 o\ydt.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.beep_failed
+                0x00014efc        0x8 o\ydt.o
+ .ARM.exidx.text.beep_success
+                0x00014f04        0x8 o\ydt.o
+ .ARM.exidx.text.com1_query_ch
+                0x00014f0c        0x8 o\ydt.o
+ .ARM.exidx.text.com1_gets_keyboard
+                0x00014f14        0x8 o\ydt.o
+ .ARM.exidx.text.com1_gets
+                0x00014f1c        0x8 o\ydt.o
+ .ARM.exidx.text.uart1_buf_flush
+                0x00014f24        0x8 o\ydt.o
+ .ARM.exidx.text.com1_snd_and_rcv2
+                0x00014f2c        0x8 o\ydt.o
+ .ARM.exidx.text.com1_snd_and_rcv
+                0x00014f34        0x0 o\ydt.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.lcddisperr
+                0x00014f34        0x8 o\ydt.o
+ .ARM.exidx.text.store_record
+                0x00014f3c        0x8 o\ydt.o
+ .ARM.exidx.text.ReadParam
+                0x00014f44        0x8 o\ydt.o
+ .ARM.exidx.text.WriteParam
+                0x00014f4c        0x8 o\ydt.o
+ .ARM.exidx.text.param_factory_default
+                0x00014f54        0x8 o\ydt.o
+ .ARM.exidx.text.lcddisp
+                0x00014f5c        0x8 o\ydt.o
+ .ARM.exidx.text.get_input_str
+                0x00014f64        0x8 o\ydt.o
+ .ARM.exidx.text.browse_menu2
+                0x00014f6c        0x8 o\ydt.o
+ .ARM.exidx.text.browse_menu
+                0x00014f74        0x8 o\ydt.o
+ .ARM.exidx.text.Modify_Time
+                0x00014f7c        0x8 o\ydt.o
+ .ARM.exidx.text.Get_Time
+                0x00014f84        0x8 o\ydt.o
+ .ARM.exidx.text.browse_menu_time
+                0x00014f8c       0x10 o\ydt.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx     0x00014f9c        0x8 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_fixunsdfdi.o)
+ .ARM.exidx     0x00014fa4       0x18 c:\program files\ept-tools\ept-sdk\sourcery g++ lite\bin\../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+                                 0x10 (size before relaxing)
+ .ARM.exidx.init
+                0x00014d34       0x10 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.fini
+                0x00014fbc       0x10 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+                                  0x8 (size before relaxing)
+                0x00014fcc                __exidx_end = .
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x00014fcc        0x4
+ *(.eh_frame)
+ .eh_frame      0x00014fcc        0x4 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtend.o
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+                0x00014fd0                . = (ALIGN (0x8000) - ((0x8000 - .) & 0x7fff))
+                0x0001d000                . = (0x8000 DATA_SEGMENT_ALIGN 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0001d000        0x0
+                0x0001d000                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x0001d000                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0001d000        0x4
+                0x0001d000                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x0001d000        0x4 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+                0x0001d004                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0001d004        0x4
+                0x0001d004                PROVIDE (__fini_array_start, .)
+ *(.fini_array)
+ .fini_array    0x0001d004        0x4 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x0001d008                PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr            0x0001d008        0x4
+ *(.jcr)
+ .jcr           0x0001d008        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+ .jcr           0x0001d008        0x4 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtend.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x0001d00c      0x118
+ *(.dynamic)
+ .dynamic       0x0001d00c      0x118 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+                0x0001d00c                _DYNAMIC
+                0x0001d124                . = (. DATA_SEGMENT_RELRO_END 0x0)
+
+.got            0x0001d124      0x114
+ *(.got.plt)
+ .got.plt       0x0001d124      0x110 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+                0x0001d124                _GLOBAL_OFFSET_TABLE_
+ *(.got)
+ .got           0x0001d234        0x4 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.data           0x0001d238      0x100
+                0x0001d238                __data_start = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.VERSION  0x0001d238        0x4 o\main.o
+                0x0001d238                VERSION
+ .data.setting_menu
+                0x0001d23c       0x68 o\main.o
+                0x0001d23c                setting_menu
+ .data.main_menu
+                0x0001d2a4       0x90 o\main.o
+                0x0001d2a4                main_menu
+ .data.BUSS_NUM_FULL_PRE
+                0x0001d334        0x4 o\main.o
+                0x0001d334                BUSS_NUM_FULL_PRE
+
+.data1
+ *(.data1)
+                0x0001d338                _edata = .
+                0x0001d338                PROVIDE (edata, .)
+                0x0001d338                __bss_start = .
+                0x0001d338                __bss_start__ = .
+
+.bss            0x0001d338     0x1f18
+ *(.dynbss)
+ .dynbss        0x00000000        0x0 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0001d338        0x1 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+ .bss.Flag_Exticket
+                0x0001d339        0x1 o\main.o
+                0x0001d339                Flag_Exticket
+ .bss.argc      0x0001d33a        0x1 o\shell.o
+ *fill*         0x0001d33b        0x1 00
+ .bss.argv      0x0001d33c       0x50 o\shell.o
+ *(COMMON)
+ *fill*         0x0001d38c        0x4 00
+ COMMON         0x0001d390      0xe80 o\main.o
+                0x0001d390                line_menu
+                0x0001db68                DevStat
+                0x0001dd00                hDprinterHandle
+                0x0001dd04                hRS232Handle
+                0x0001dd08                STinfo
+                0x0001dd0c                station_menu
+                0x0001e0f8                Linfo
+                0x0001e0fc                Tinfo
+                0x0001e17c                OPinfo
+                0x0001e180                CardInfo
+                0x0001e1ac                dbuf
+ COMMON         0x0001e210     0x1040 o\shell.o
+                0x0001e210                Com1RcvBuf2
+                0x0001e6c0                ShellComms
+                0x0001e8f0                Com1SndBuf
+                0x0001eda0                Com1RcvBuf
+                0x0001f250                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0001f250                _bss_end__ = .
+                0x0001f250                __bss_end__ = .
+                0x0001f250                . = ALIGN (0x4)
+                0x0001f250                . = ALIGN (0x4)
+                0x0001f250                __end__ = .
+                0x0001f250                _end = .
+                0x0001f250                PROVIDE (end, .)
+                0x0001f250                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.ARM.attributes
+                0x00000000       0x2d
+ .ARM.attributes
+                0x00000000       0x2d c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+ .ARM.attributes
+                0x0000002d       0x31 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+ .ARM.attributes
+                0x0000005e       0x31 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+ .ARM.attributes
+                0x0000008f       0x31 o\main.o
+ .ARM.attributes
+                0x000000c0       0x31 o\NormalData.o
+ .ARM.attributes
+                0x000000f1       0x31 o\shell.o
+ .ARM.attributes
+                0x00000122       0x31 o\ydt.o
+ .ARM.attributes
+                0x00000153       0x16 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x00000169       0x16 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x0000017f       0x16 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_fixunsdfsi.o)
+ .ARM.attributes
+                0x00000195       0x16 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_truncdfsf2.o)
+ .ARM.attributes
+                0x000001ab       0x16 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_arm_addsubsf3.o)
+ .ARM.attributes
+                0x000001c1       0x31 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_fixunsdfdi.o)
+ .ARM.attributes
+                0x000001f2       0x31 c:\program files\ept-tools\ept-sdk\sourcery g++ lite\bin\../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .ARM.attributes
+                0x00000223       0x31 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtend.o
+ .ARM.attributes
+                0x00000254       0x31 c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+
+.comment        0x00000000       0xac
+ *(.comment)
+ .comment       0x00000000       0x2b o\main.o
+ .comment       0x0000002b       0x2b o\NormalData.o
+ .comment       0x00000056       0x2b o\shell.o
+ .comment       0x00000081       0x2b o\ydt.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x348
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000      0x148 o\main.o
+ .debug_aranges
+                0x00000148       0xb0 o\shell.o
+ .debug_aranges
+                0x000001f8      0x150 o\ydt.o
+
+.debug_pubnames
+                0x00000000      0x7e9
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000      0x41c o\main.o
+ .debug_pubnames
+                0x0000041c      0x162 o\shell.o
+ .debug_pubnames
+                0x0000057e      0x26b o\ydt.o
+
+.debug_info     0x00000000     0x6ac9
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x38aa o\main.o
+ .debug_info    0x000038aa        0x0 o\NormalData.o
+ .debug_info    0x000038aa     0x129d o\shell.o
+ .debug_info    0x00004b47     0x1f82 o\ydt.o
+
+.debug_abbrev   0x00000000      0xa07
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x304 o\main.o
+ .debug_abbrev  0x00000304        0x1 o\NormalData.o
+ .debug_abbrev  0x00000305      0x38b o\shell.o
+ .debug_abbrev  0x00000690      0x377 o\ydt.o
+
+.debug_line     0x00000000     0x2a09
+ *(.debug_line)
+ .debug_line    0x00000000     0x167d o\main.o
+ .debug_line    0x0000167d        0x0 o\NormalData.o
+ .debug_line    0x0000167d      0x77a o\shell.o
+ .debug_line    0x00001df7      0xc12 o\ydt.o
+
+.debug_frame    0x00000000      0xc5c
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x56c o\main.o
+ .debug_frame   0x0000056c      0x248 o\shell.o
+ .debug_frame   0x000007b4      0x438 o\ydt.o
+ .debug_frame   0x00000bec       0x2c c:/program files/ept-tools/ept-sdk/sourcery g++ lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3\libgcc.a(_fixunsdfdi.o)
+ .debug_frame   0x00000c18       0x44 c:\program files\ept-tools\ept-sdk\sourcery g++ lite\bin\../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+
+.debug_str      0x00000000     0x12c5
+ *(.debug_str)
+ .debug_str     0x00000000      0xd6b o\main.o
+                                0xeee (size before relaxing)
+ .debug_str     0x00000d6b      0x1c9 o\shell.o
+                                0x6a0 (size before relaxing)
+ .debug_str     0x00000f34      0x391 o\ydt.o
+                                0x9aa (size before relaxing)
+
+.debug_loc      0x00000000     0x30d2
+ *(.debug_loc)
+ .debug_loc     0x00000000     0x14aa o\main.o
+ .debug_loc     0x000014aa      0xaf5 o\shell.o
+ .debug_loc     0x00001f9f     0x1133 o\ydt.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0xd48
+ *(.debug_ranges)
+ .debug_ranges  0x00000000      0x628 o\main.o
+ .debug_ranges  0x00000628      0x218 o\shell.o
+ .debug_ranges  0x00000840      0x508 o\ydt.o
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+OUTPUT(o\ticket_printer elf32-littlearm)

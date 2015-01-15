@@ -1,0 +1,56 @@
+[Global]
+CurrentProject=长途售票机.vpj
+[ActiveConfig]
+长途售票机.vpj=,CFG=长途售票机 - Win32 Debug
+[ProjectDates]
+长途售票机.dsp=20130809220125194
+[TreeExpansion2]
+-@ 长途售票机.dsp
+  - Header Files
+  - Resource Files
+  - Source Files
+scroll:0
+[State]
+SCREEN: 1366 768 53 287 1270 732 0 0 M 0 0 0 0 1092 579 0
+CWD: ..\..\..\淄博公交加油站项目\zibogas\POS加油站V4.0
+BUFFER: BN="G:\cadence16.3\2005\09.大连家校通\04.嵌入式软件\01.源代码\menu_and_setting.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.4730 CL=22 LE=0 CX=21 CY=18 WI=5 BI=11 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="Project\main.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=52494944 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.42742 CL=29 LE=0 CX=28 CY=16 WI=5 BI=12 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="..\..\..\淄博公交加油站项目\zibogas\POS加油站V3.0\加油POS机\POS加油机\Project\SIM200.H"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.491 CL=1 LE=0 CX=0 CY=12 WI=5 BI=13 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="..\..\..\淄博公交加油站项目\zibogas\POS加油站V2.0\加油POS机\POS加油机\Project\SIM200.H"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.495 CL=1 LE=0 CX=0 CY=0 WI=5 BI=14 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="..\..\..\淄博公交加油站项目\zibogas\POS加油站V3.0\加油POS机\POS加油机\Project\M1card.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.3151 CL=2 LE=0 CX=1 CY=9 WI=5 BI=15 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="..\..\..\淄博公交加油站项目\zibogas\POS加油站V2.0\加油POS机\POS加油机\Project\M1card.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.3148 CL=2 LE=0 CX=1 CY=9 WI=5 BI=16 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="..\..\..\淄博公交加油站项目\zibogas\POS加油站V2.0\加油POS机\POS加油机\Project\Function.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.712 CL=22 LE=0 CX=21 CY=12 WI=5 BI=17 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="..\..\..\淄博公交加油站项目\zibogas\POS加油站V2.0\加油POS机\POS加油机\Project\SIM200.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.4637 CL=22 LE=0 CX=21 CY=18 WI=5 BI=18 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="..\..\..\淄博公交加油站项目\zibogas\POS加油站V4.0\加油POS机\POS加油机\Project\SIM200.H"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.491 CL=1 LE=0 CX=0 CY=0 WI=5 BI=19 HT=0 HN=0 HF=0 HC=4
+WINDOW: 16 30 1162 582 0 0 M  WF=0 WT=1 ",,,"
+BUFFER: BN="Project\main.c"
+VIEW: LN=.546 CL=16 LE=0 CX=16 CY=18 WI=11 BI=12 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+..\..\..\磁选环柱选矿程序\cixuanhuanzhu\可控硅部分程序源代码\可控硅控制板源代码\HARDWARE\LED\led.h
+..\..\..\磁选环柱选矿程序\cixuanhuanzhu\可控硅部分程序源代码\可控硅控制板源代码\HARDWARE\TIMER\timer.c
+..\..\..\磁选环柱选矿程序\cixuanhuanzhu\可控硅部分程序源代码\可控硅控制板源代码\HARDWARE\EXTI\exti.c
+..\..\..\磁选环柱选矿程序\cixuanhuanzhu\可控硅部分程序源代码\可控硅控制板源代码\USMART\usmart.h
+..\..\..\磁选环柱选矿程序\cixuanhuanzhu\可控硅部分程序源代码\可控硅控制板源代码\SYSTEM\usart\usart.h
+..\..\..\磁选环柱选矿程序\cixuanhuanzhu\可控硅部分程序源代码\可控硅控制板源代码\SYSTEM\usart\usart.c
+..\..\..\磁选环柱选矿程序\cixuanhuanzhu\可控硅部分程序源代码\可控硅控制板源代码\STM32F10x_FWLib\src\stm32f10x_usart.c
+..\..\..\磁选环柱选矿程序\cixuanhuanzhu\可控硅部分程序源代码\可控硅控制板源代码\USER\main.c
+Project\main.c
+TBCLASS: 0 0
