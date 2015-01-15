@@ -1,0 +1,18 @@
+[compile]
+predef=       
+cpu=A9L
+opt=
+cparam= -O2 -Wall -pipe -ggdb -std=gnu99 -fsigned-char -Wpointer-arith -Wwrite-strings -Wshadow -Wstrict-prototypes -Wmissing-declarations -Wmissing-prototypes -Wredundant-decls -Wnested-externs -Winline -Wempty-body -Wmissing-field-initializers -Wtype-limits -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -I".\Project"
+UseSDKInc=1
+[link]
+lparam= -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--allow-shlib-undefined -Wl,--gc-sections -Wl,-Map -Wl,
+fixup=DLA
+name=³¤Í¾ÊÛÆ±»ú             
+mode=ticket_printer            
+var=01-01-02            
+no=EPT_A9L
+StartUp=0
+[Global]
+Edition=EPT-A9L-
+UseLib=""
+LibPath=

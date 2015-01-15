@@ -1,0 +1,12 @@
+-----------------configuration: 长途售票机-----------------
+
+编译中...
+
+main.c
+
+
+
+main.o - 0 error(s), 0 warning(s)
+
+
+
