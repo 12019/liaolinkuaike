@@ -4,6 +4,15 @@
 
 main.c
 
+.\project\main.c: In function 'sell_ticket':
+
+.\project\main.c:1589: warning: label 'sell_ticket_step6' defined 
+but not used
+
+.\project\main.c: In function 'ic_card_process':
+
+.\project\main.c:4491: warning: unused variable 'key'
+
 链接中...
 
 链接成功!

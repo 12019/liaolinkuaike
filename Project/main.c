@@ -1523,7 +1523,7 @@ sell_ticket_step1:
 	EA_vTextOut(0, 0, EM_key_FONT8X16, 0, 1, 1, "      售票      ");
 	sprintf((void *)buf, "%s    班次:%2d", (char *)&DevStat.line_full_name[0], DevStat.banci);
 	lcddisp(1, 1, (void *)buf);
-	sprintf((void *)buf, "F2月票卡            ");
+	sprintf((void *)buf, "0月票卡            ");
 	lcddisp(4, 1, (void *)buf);
 
 	EA_ucSetInverse(EM_lcd_INVON);
@@ -1542,10 +1542,10 @@ sell_ticket_step1:
 			key = EM_key_F1;
 			goto sell_ticket_step1;
 		}
-		if ( i == EM_key_F2 )
+		if ( i == EM_key_0 )
 		{
-			key = EM_key_F2;
-			goto sell_ticket_step6;
+			key = EM_key_0;
+			return;
 		}
 	}
 	sscanf((void *)input, "%f", &DevStat.origin_pricef);
@@ -1622,7 +1622,7 @@ sell_ticket_step6:
 
 	}
 
-	goto sell_ticket_step1;
+	return;
 
 }
 /******************************************************************************
@@ -2119,7 +2119,6 @@ void set_pos_init(void)
 ******************************************************************************/
 void generate_ticket_info(void)
 {
-
 	strcpy((void *)&Tinfo.pos_number[0], (void *)&DevStat.pos_number[0]);                   //机器号 6
 	sprintf((void *)&Tinfo.ticket_number[0], "%07d", DevStat.cur_ticket_number);            //票号 7
 	strcpy((void *)&Tinfo.ticket_time[0], (void *)&DevStat.sell_ticket_times[0]);           //收费日期时间  14
@@ -4330,13 +4329,24 @@ INT8U ic_yuepiaocard_process(void)
 	}
 
 
-	for(;;)
+	for( ;; )
 	{
+//  	key = EA_ucKBHit();
+//  	if ( key == EM_key_HIT )    //有按键
+//  	{
+//  		key = EA_uiInkey(1);    //读取按键键值
+//  		if ( key == EM_key_CANCEL )
+//  		{
+//  			(void)EA_ucCloseDevice(&hRS232Handle);
+//  			return notok;       //退出
+//  		}
+//  	}
 		//找卡
 		memcpy(Com1SndBuf, "\xAA\x05\x00", 3);
 		i = com1_snd_and_rcv(Com1SndBuf, 3, (void *)Com1RcvBuf, &rcv_len, 1000, 10);
 		if ( i == 0x01 )
 		{
+			(void)EA_ucCloseDevice(&hRS232Handle);
 			return notok;			//按取消键退出
 		}
 		if ( i != ok )
@@ -4415,10 +4425,10 @@ INT8U ic_yuepiaocard_process(void)
 		////////////////////////////////////////
 		switch ( CardInfo.card_type )
 		{
-		   case CARDT_YOUHUI:		//优惠卡
-			   i = notok;
-			   lcddisperr("不是月票卡！");
-			   break;
+//  	   case CARDT_YOUHUI:		//优惠卡
+//  		   i = notok;
+//  		   lcddisperr("不是月票卡！");
+//  		   break;
 
 		   case CARDT_YUEPIAO:		//月票卡
 			   i = card_yuepiao_process();
@@ -4437,16 +4447,18 @@ INT8U ic_yuepiaocard_process(void)
 		if ( i != ok )
 			continue;
 
-		(void)Get_Time(&ltime);
-		memcpy(&DevStat.sell_ticket_time.century, &ltime.century, sizeof(BUS_TIME));
-		sprintf((void *)&DevStat.sell_ticket_times[0], "%02X%02X%02X%02X%02X%02X%02X",
-				ltime.century, ltime.year, ltime.month, ltime.day, ltime.hour, ltime.minute, ltime.second);
-
-		generate_ticket_info();                 //生成记录
-		store_record(&Tinfo.pos_number[0]);     //储存记录
-		//刷卡成功 跳出循环
 		break;
+		
 	}
+
+	(void)Get_Time(&ltime);
+	memcpy(&DevStat.sell_ticket_time.century, &ltime.century, sizeof(BUS_TIME));
+	sprintf((void *)&DevStat.sell_ticket_times[0], "%02X%02X%02X%02X%02X%02X%02X",
+			ltime.century, ltime.year, ltime.month, ltime.day, ltime.hour, ltime.minute, ltime.second);
+
+	generate_ticket_info();                 //生成记录
+	store_record(&Tinfo.pos_number[0]);     //储存记录
+	
 
 	(void)EA_ucCloseDevice(&hRS232Handle);
 
@@ -4479,7 +4491,7 @@ INT8U ic_card_process(void)
 	INT8U key = 0;
 
 	EA_vCls();
-	lcddisp(1, 1, (void *)"      请刷卡..      ");
+	lcddisp(1, 1, (void *)"    请刷优惠卡..    ");
 
 	//打开RS232设备
 	ucResult = EA_ucOpenDevice("COM1", EM_io_RDWR, &hRS232Handle);
@@ -4498,21 +4510,25 @@ INT8U ic_card_process(void)
 	}
 
 
-	for(;;)
+	for( ;; )
 	{
-		key = EA_ucKBHit();
-		if ( key == EM_key_HIT )    //有按键
-		{
-			key = EA_uiInkey(1);    //读取按键键值
-			if ( key == EM_key_CANCEL )
-				return notok;       //退出
-		}
+//  	key = EA_ucKBHit();
+//  	if ( key == EM_key_HIT )    //有按键
+//  	{
+//  		key = EA_uiInkey(1);    //读取按键键值
+//  		if ( key == EM_key_CANCEL )
+//  		{
+//  			(void)EA_ucCloseDevice(&hRS232Handle);
+//  			return notok;       //退出
+//  		}
+//  	}
 
 		//找卡
 		memcpy(Com1SndBuf, "\xAA\x05\x00", 3);
 		i = com1_snd_and_rcv(Com1SndBuf, 3, (void *)Com1RcvBuf, &rcv_len, 1000, 10);
 		if ( i == 0x01 )
 		{
+			(void)EA_ucCloseDevice(&hRS232Handle);
 			return notok;			//按取消键退出
 		}
 		if ( i != ok )
@@ -4581,6 +4597,12 @@ INT8U ic_card_process(void)
 		CardInfo.valid_time.minute = 0x00;
 		CardInfo.valid_time.second = 0x00;
 
+		strcpy((void *)&DevStat.start_station_number[0], (char *)"");
+		strcpy((void *)&DevStat.start_station_name[0], (char *)"");
+
+		strcpy((void *)&DevStat.end_station_number[0], (char *)"");
+		strcpy((void *)&DevStat.end_station_name[0], (char *)"");
+
 		(void)Get_Time(&CardInfo.card_in_time);
 //		memcpy((void *)&CardInfo.card_in_time, (void *)&time, sizeof(BUS_TIME));
 
@@ -4594,9 +4616,10 @@ INT8U ic_card_process(void)
 			   i = card_youhui_process();
 			   break;
 
-		   case CARDT_YUEPIAO:		//月票卡
-			   i = card_yuepiao_process();
-			   break;
+//           case CARDT_YUEPIAO:      //月票卡
+////  		   i = card_yuepiao_process();
+//               i = notok;
+//               break;
 
 		   default:                //卡类型错误
 			   lcddisp(2, 1, (void *)"    卡类型错误!!    ");
@@ -4700,7 +4723,7 @@ INT8U card_youhui_process(void)
 //		memcpy(&CardInfo._CARD_NUMBER.detail_card_number.serial_number[0], &Com1RcvBuf[3], 4);
 //		CardInfo.card_purchase_type = Com1RcvBuf[3];
 
-		DevStat.ticket_type = '7';
+		DevStat.ticket_type = '9';
 		CardInfo.card_purchase_type = 0x06;
 		memcpy(&CardInfo.balance, &Com1RcvBuf[8], 4);
 		strcpy((void *)&DevStat.prices[0], (void *)prices_tmp);
@@ -4718,7 +4741,7 @@ INT8U card_youhui_process(void)
 		}
 
 		beep_success();
-		sleep_ms(8000);
+		sleep_ms(5500);
 		return ok;
 	}
 	else
@@ -4775,10 +4798,8 @@ INT8U card_yuepiao_process(void)
 		//在有效期内，不扣钱
 		//只能按照对应的金额进行消费刷卡 ,, frank 14年10月18号
 		//取票价
-//  	pricef = atof((void *)&DevStat.prices[0]);
 		CardInfo.fare = 0;
 		CardInfo.balance = 0;			//金额和卡内余额都是0
-
 //  	memset((void *)&DevStat.prices[0], 0x00, 8);                    //票价为0.00元
 		sprintf((void *)&DevStat.prices[0], "%.2f", 0.00);
 		DevStat.ticket_amount = 1;										//张数为1
@@ -4872,7 +4893,8 @@ INT8U card_yuepiao_process(void)
 			}
 
 			beep_success();
-			sleep_ms(8000);
+
+			sleep_ms(5500);
 			return ok;
 		}
 		else
