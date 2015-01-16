@@ -8,8 +8,16 @@ All rights riserved.
  
  
  
+当前版本：0.1.2
+修 改 人：frank 
+完成日期：2015.1.19
+升级说明：  1.取消票号输入的过程 
+    		2.记录中删除掉，票号的部分
+    		3.去掉全天汇总的票据打印功能
+ 
+ 
 当前版本：0.1.0
-修改人	：frank 
+修 改 人：frank 
 完成日期：2015.1.15
 升级说明：  1.取消现金消费，刷卡消费，两种快捷键，对应两种卡类型。
     		2.消费金额，手动输入，
@@ -19,7 +27,7 @@ All rights riserved.
  
  
 当前版本：0.0.9
-修改人	：frank 
+修 改 人：frank 
 完成日期：2014.11.28
 升级说明：  1.修改一个刷卡，消费的重复折扣的Bug，
     		2.三人同乘坐，4元，票价，变成12元 ，打印的时候，票面金额显示的每张都是12元，应该修改为每张4元。
@@ -27,7 +35,7 @@ All rights riserved.
  
  
 当前版本：0.0.8
-修改人	：frank 
+修 改 人：frank 
 完成日期：2014.11.28
 升级说明：  1.add youxiaoqi  ,kaishi he jiezhi riqi shezhi
 			2.add yuepiao ka , zhijie shuaka kuaijie fangshi 
@@ -83,14 +91,14 @@ All rights riserved.
 #include "main.h"
 
 
-const char *VERSION = " 0.1.0";         //版本号
+const char *VERSION = " 0.1.2";         //版本号
 char dbuf[100];
 volatile char Flag_Exticket = 0;
 const char *BUSS_NUM_FULL_PRE =	"鲁P-";
 
 
 
-INT8U main_menu[7*20+2] = "1.售票              2.票号设置          3.班次设置          4.数据处理          5.今日统计          6.选择线路          7.系统设置          ";
+INT8U main_menu[7*20+2] = "1.售票              2.班次设置          3.数据处理          4.今日统计          5.选择线路          6.系统设置          ";
 
 //INT8U data_menu[] = "1.废票              2.上传售票记录      3.下载参数表        ";
 INT8U data_menu[2*20+2] = "1.废票              2.记录和参数传输    ";
@@ -142,7 +150,7 @@ int main(int arc, char **argv)
 	operator_login();
 	line_number_verify();
 	bus_number_verify();
-	set_ticket_number();
+	//set_ticket_number();
 
 	for (;;)
 	{
@@ -153,28 +161,28 @@ int main(int arc, char **argv)
 			   sell_ticket();
 			   break;
 
-		   case 1:              //2.票号设置
-			   set_ticket_number();
-			   break;
+//  	   case 1:              //2.票号设置
+//  		   set_ticket_number();
+//  		   break;
 
-		   case 2:              //3.班次设置
+		   case 1:              //3.班次设置
 			   set_banci();
 			   break;
 
-		   case 3:              //4.数据处理
+		   case 2:              //4.数据处理
 				//  		   mdata();
 			   send_record_process();
 			   break;
 
-		   case 4:              //5.今日统计
+		   case 3:              //5.今日统计
 			   query_today_summary();
 			   break;
 
-		   case 5:              //6.选择线路
+		   case 4:              //6.选择线路
 			   choose_line();
 			   break;
 
-		   case 6:              //7.系统设置
+		   case 5:              //7.系统设置
 			   msystem();
 			   break;
 
@@ -1523,7 +1531,7 @@ sell_ticket_step1:
 	EA_vTextOut(0, 0, EM_key_FONT8X16, 0, 1, 1, "      售票      ");
 	sprintf((void *)buf, "%s    班次:%2d", (char *)&DevStat.line_full_name[0], DevStat.banci);
 	lcddisp(1, 1, (void *)buf);
-	sprintf((void *)buf, "F2月票卡            ");
+	sprintf((void *)buf, "0月票卡            ");
 	lcddisp(4, 1, (void *)buf);
 
 	EA_ucSetInverse(EM_lcd_INVON);
@@ -1542,10 +1550,10 @@ sell_ticket_step1:
 			key = EM_key_F1;
 			goto sell_ticket_step1;
 		}
-		if ( i == EM_key_F2 )
+		if ( i == EM_key_0 )
 		{
-			key = EM_key_F2;
-			goto sell_ticket_step6;
+			key = EM_key_0;
+			return;
 		}
 	}
 	sscanf((void *)input, "%f", &DevStat.origin_pricef);
@@ -1622,7 +1630,7 @@ sell_ticket_step6:
 
 	}
 
-	goto sell_ticket_step1;
+	return;
 
 }
 /******************************************************************************
@@ -2119,9 +2127,8 @@ void set_pos_init(void)
 ******************************************************************************/
 void generate_ticket_info(void)
 {
-
 	strcpy((void *)&Tinfo.pos_number[0], (void *)&DevStat.pos_number[0]);                   //机器号 6
-	sprintf((void *)&Tinfo.ticket_number[0], "%07d", DevStat.cur_ticket_number);            //票号 7
+//  sprintf((void *)&Tinfo.ticket_number[0], "%07d", DevStat.cur_ticket_number);            //票号 7
 	strcpy((void *)&Tinfo.ticket_time[0], (void *)&DevStat.sell_ticket_times[0]);           //收费日期时间  14
 	strcpy((void *)&Tinfo.op_number[0], (void *)&DevStat.op_number[0]);                     //收费员号  6
 	strcpy((void *)&Tinfo.start_station_num[0], (void *)&DevStat.start_station_number[0]);  //起始站编号 4
@@ -2452,15 +2459,16 @@ void print_ticket(TICKET_INFO *ticket)
 //  	sprintf(printbuf, "    全票：%7s元\n", ticket->price);
 //  else
 //  	sprintf(printbuf, "    半票：%7s元\n", ticket->price);
-	if ( strcmp((void *)ticket->price_type, "1") == 0 )
-	{
-		sprintf(printbuf, "    全票：%7s元\n", ticket->price);
-	}
-	else if ( strcmp((void *)ticket->price_type, "2") == 0 )
-	{
-		sprintf(printbuf, "    半票：%7s元\n", ticket->price);
-	}
-	else if ( strcmp((void *)ticket->price_type, "7") == 0 )   //优惠卡
+//  if ( strcmp((void *)ticket->price_type, "1") == 0 )
+//  {
+//  	sprintf(printbuf, "    全票：%7s元\n", ticket->price);
+//  }
+//  else if ( strcmp((void *)ticket->price_type, "2") == 0 )
+//  {
+//  	sprintf(printbuf, "    半票：%7s元\n", ticket->price);
+//  }
+//  else
+	if ( strcmp((void *)ticket->price_type, "9") == 0 )   //优惠卡
 	{
 		sprintf(printbuf, "  优惠票：%7s元\n", ticket->price);
 	}
@@ -2468,10 +2476,10 @@ void print_ticket(TICKET_INFO *ticket)
 	{
 		sprintf(printbuf, "    月票：%7s元\n", ticket->price);
 	}
-	else
-	{
-		sprintf(printbuf, "    货票：%7s元\n", ticket->price);
-	}
+//  else
+//  {
+//  	sprintf(printbuf, "    货票：%7s元\n", ticket->price);
+//  }
 
 	(void)EA_ucLinePrinter(hDprinterHandle, 0, printbuf);               //全票：1234.00元
 
@@ -2486,7 +2494,7 @@ void print_ticket(TICKET_INFO *ticket)
 	//      sprintf(printbuf, "班次：%2s       上行\n", ticket->banci);
 	//  else
 	//      sprintf(printbuf, "班次：%2s       下行\n", ticket->banci);
-	if ( strcmp((void *)ticket->price_type, "7") == 0 )
+	if ( strcmp((void *)ticket->price_type, "9") == 0 )
 	{
 		balance = atof((void *)&ticket->card_balance[0]);
 		sprintf(printbuf, "卡内余额：%5.2f元\n", balance / 100.00);
@@ -2920,68 +2928,68 @@ void query_today_summary(void)
 		if ( cur_banci > max_banci )
 			max_banci = cur_banci;
 
-		if ( strcmp((void *)&ticket.price_type[0], "1") == 0 )
-		{
-			//全价票
-			banci[cur_banci].full_num++;
-			today.full_num++;
-			sscanf((void *)&ticket.price[0], "%f", &fprice);
-			price = (INT32U)(fprice * 100.0);
-			banci[cur_banci].full_sum += price;
-			today.full_sum += price;
-
-			banci[cur_banci].total_num++;
-			banci[cur_banci].total_sum += price;
-			today.total_num++;
-			today.total_sum += price;
-		}
-		else if ( strcmp((void *)&ticket.price_type[0], "2") == 0 )
-		{
-			//半价票
-			banci[cur_banci].half_num++;
-			today.half_num++;
-			sscanf((void *)&ticket.price[0], "%f", &fprice);
-			price = (INT32U)(fprice * 100.0);
-			banci[cur_banci].half_sum += price;
-			today.half_sum += price;
-
-			banci[cur_banci].total_num++;
-			banci[cur_banci].total_sum += price;
-			today.total_num++;
-			today.total_sum += price;
-		}
-		else if ( strcmp((void *)&ticket.price_type[0], "3") == 0 )
-		{
-			//货票
-			banci[cur_banci].package_num++;
-			today.package_num++;
-			sscanf((void *)&ticket.price[0], "%f", &fprice);
-			price = (INT32U)(fprice * 100.0);
-			banci[cur_banci].package_sum += price;
-			today.package_sum += price;
-
-			banci[cur_banci].total_num++;
-			banci[cur_banci].total_sum += price;
-			today.total_num++;
-			today.total_sum += price;
-		}
-		else if ( strcmp((void *)&ticket.price_type[0], "4") == 0 )
-		{
-//  		//废票
-//  		banci[cur_banci].valid_num++;
-//  		today.valid_num++;
-//  		sscanf((void *)&ticket.price[0], "%f", &fprice);
-//  		price = (INT32U)(fprice * 100.0);
-//  		banci[cur_banci].valid_sum += price;
-//  		today.valid_sum += price;
+//        if ( strcmp((void *)&ticket.price_type[0], "1") == 0 )
+//        {
+//            //全价票
+//            banci[cur_banci].full_num++;
+//            today.full_num++;
+//            sscanf((void *)&ticket.price[0], "%f", &fprice);
+//            price = (INT32U)(fprice * 100.0);
+//            banci[cur_banci].full_sum += price;
+//            today.full_sum += price;
 //
-//  		banci[cur_banci].total_num++;
-//  		banci[cur_banci].total_sum -= price;
-//  		today.total_num++;
-//  		today.total_sum -= price;
-		}
+//            banci[cur_banci].total_num++;
+//            banci[cur_banci].total_sum += price;
+//            today.total_num++;
+//            today.total_sum += price;
+//        }
+//        else if ( strcmp((void *)&ticket.price_type[0], "2") == 0 )
+//        {
+//            //半价票
+//            banci[cur_banci].half_num++;
+//            today.half_num++;
+//            sscanf((void *)&ticket.price[0], "%f", &fprice);
+//            price = (INT32U)(fprice * 100.0);
+//            banci[cur_banci].half_sum += price;
+//            today.half_sum += price;
+//
+//            banci[cur_banci].total_num++;
+//            banci[cur_banci].total_sum += price;
+//            today.total_num++;
+//            today.total_sum += price;
+//        }
+//        else if ( strcmp((void *)&ticket.price_type[0], "3") == 0 )
+//        {
+//            //货票
+//            banci[cur_banci].package_num++;
+//            today.package_num++;
+//            sscanf((void *)&ticket.price[0], "%f", &fprice);
+//            price = (INT32U)(fprice * 100.0);
+//            banci[cur_banci].package_sum += price;
+//            today.package_sum += price;
+//
+//            banci[cur_banci].total_num++;
+//            banci[cur_banci].total_sum += price;
+//            today.total_num++;
+//            today.total_sum += price;
+//        }
+//        else if ( strcmp((void *)&ticket.price_type[0], "4") == 0 )
+//        {
+////  		//废票
+////  		banci[cur_banci].valid_num++;
+////  		today.valid_num++;
+////  		sscanf((void *)&ticket.price[0], "%f", &fprice);
+////  		price = (INT32U)(fprice * 100.0);
+////  		banci[cur_banci].valid_sum += price;
+////  		today.valid_sum += price;
+////
+////  		banci[cur_banci].total_num++;
+////  		banci[cur_banci].total_sum -= price;
+////  		today.total_num++;
+////  		today.total_sum -= price;
+//        }
  
-		else if ( strcmp((void *)&ticket.price_type[0], "7" ) == 0 )
+		if ( strcmp((void *)&ticket.price_type[0], "9" ) == 0 )
 		{
 			//优惠票
 			banci[cur_banci].youhui_num++;
@@ -3025,7 +3033,7 @@ void query_today_summary(void)
 	}
 
 
-	for (;;)
+	for ( ;; )
 	{
 		menus = browse_menu(1, (void *)"    今日统计    ", sum_menu, TRUE);
 		if ( menus == -1 )                //退出
@@ -3051,18 +3059,18 @@ void query_today_summary(void)
 
 
 			//(void)EA_uiInkey(0);
-			key = EA_uiInkey(0);
-			if ( key == EM_key_ENTER )
-			{
-				EA_vCls();
-				EA_vTextOut(0, 0, EM_key_FONT8X16, 0, 1, 1, "是否确定打印？  ");
-				EA_vDisp(4, 1, "确定-打印  其他-取消");
-				key = EA_uiInkey(0);
-				if ( key == EM_key_ENTER )
-				{
-					(void)print_summary(&today);
-				}
-			}
+//  		key = EA_uiInkey(0);
+//  		if ( key == EM_key_ENTER )
+//  		{
+//  			EA_vCls();
+//  			EA_vTextOut(0, 0, EM_key_FONT8X16, 0, 1, 1, "是否确定打印？  ");
+//  			EA_vDisp(4, 1, "确定-打印  其他-取消");
+//  			key = EA_uiInkey(0);
+//  			if ( key == EM_key_ENTER )
+//  			{
+//  				(void)print_summary(&today);
+//  			}
+//  		}
 		}
 		else
 		{
@@ -3072,34 +3080,36 @@ void query_today_summary(void)
 			EA_vCls();
 //  		sprintf((void *)buf, "   班次%2d   ", menus);
 //  		EA_vTextOut(0, 0, EM_key_FONT8X16, 0, 1, 1, (void *)buf);
-			sprintf((void *)buf, "全票%4d张%8.1f元", banci[menus].full_num, (FP32)banci[menus].full_sum / 100.0);
-			lcddisp(1, 1, (void *)buf);
-			sprintf((void *)buf, "半票%4d张%8.1f元", banci[menus].half_num, (FP32)banci[menus].half_sum / 100.0);
-			lcddisp(2, 1, (void *)buf);
+//  		sprintf((void *)buf, "全票%4d张%8.1f元", banci[menus].full_num, (FP32)banci[menus].full_sum / 100.0);
+//  		lcddisp(1, 1, (void *)buf);
+//  		sprintf((void *)buf, "半票%4d张%8.1f元", banci[menus].half_num, (FP32)banci[menus].half_sum / 100.0);
+//  		lcddisp(2, 1, (void *)buf);
 			sprintf((void *)buf, "优惠%4d张%8.1f元", today.youhui_num, (FP32)today.youhui_sum / 100.0);
-			lcddisp(3, 1, (void *)buf);
+			lcddisp(1, 1, (void *)buf);
+			sprintf((void *)buf, "月票%4d张%8.1f元", today.yuepiao_num, 0.0);
+			lcddisp(2, 1, (void *)buf);
 //  		sprintf((void *)buf, "废票%4d张%8.1f元", banci[menus].valid_num, (FP32)banci[menus].valid_sum / 100.0);
 //  		lcddisp(3, 1, (void *)buf);
-			sprintf((void *)buf, "货票%4d张%8.1f元", banci[menus].package_num, (FP32)banci[menus].package_sum / 100.0);
-			lcddisp(4, 1, (void *)buf);
+//  		sprintf((void *)buf, "货票%4d张%8.1f元", banci[menus].package_num, (FP32)banci[menus].package_sum / 100.0);
+//  		lcddisp(4, 1, (void *)buf);
 			sprintf((void *)buf, "总计%3d张%5.1f元", banci[menus].total_num, (FP32)banci[menus].total_sum / 100.0);
 //  		sprintf((void *)buf, "总计%3d张%5.1f元", today.total_num, (FP32)today.total_sum / 100.0);
 			EA_vTextOut(0, 0, EM_key_FONT8X16, 0, 1, 1, (void *)buf);
 //  		lcddisp(4, 1, (void *)buf);
 
 			//(void)EA_uiInkey(0);
-			key = EA_uiInkey(0);
-			if ( key == EM_key_ENTER )
-			{
-				EA_vCls();
-				EA_vTextOut(0, 0, EM_key_FONT8X16, 0, 1, 1, "是否确定打印？  ");
-				EA_vDisp(4, 1, "确定-打印  其他-取消");
-				key = EA_uiInkey(0);
-				if ( key == EM_key_ENTER )
-				{
-					(void)print_summary(&banci[menus]);
-				}
-			}
+//  		key = EA_uiInkey(0);
+//  		if ( key == EM_key_ENTER )
+//  		{
+//  			EA_vCls();
+//  			EA_vTextOut(0, 0, EM_key_FONT8X16, 0, 1, 1, "是否确定打印？  ");
+//  			EA_vDisp(4, 1, "确定-打印  其他-取消");
+//  			key = EA_uiInkey(0);
+//  			if ( key == EM_key_ENTER )
+//  			{
+//  				(void)print_summary(&banci[menus]);
+//  			}
+//  		}
 		}
 
 
@@ -4330,13 +4340,24 @@ INT8U ic_yuepiaocard_process(void)
 	}
 
 
-	for(;;)
+	for( ;; )
 	{
+//  	key = EA_ucKBHit();
+//  	if ( key == EM_key_HIT )    //有按键
+//  	{
+//  		key = EA_uiInkey(1);    //读取按键键值
+//  		if ( key == EM_key_CANCEL )
+//  		{
+//  			(void)EA_ucCloseDevice(&hRS232Handle);
+//  			return notok;       //退出
+//  		}
+//  	}
 		//找卡
 		memcpy(Com1SndBuf, "\xAA\x05\x00", 3);
 		i = com1_snd_and_rcv(Com1SndBuf, 3, (void *)Com1RcvBuf, &rcv_len, 1000, 10);
 		if ( i == 0x01 )
 		{
+			(void)EA_ucCloseDevice(&hRS232Handle);
 			return notok;			//按取消键退出
 		}
 		if ( i != ok )
@@ -4415,10 +4436,10 @@ INT8U ic_yuepiaocard_process(void)
 		////////////////////////////////////////
 		switch ( CardInfo.card_type )
 		{
-		   case CARDT_YOUHUI:		//优惠卡
-			   i = notok;
-			   lcddisperr("不是月票卡！");
-			   break;
+//  	   case CARDT_YOUHUI:		//优惠卡
+//  		   i = notok;
+//  		   lcddisperr("不是月票卡！");
+//  		   break;
 
 		   case CARDT_YUEPIAO:		//月票卡
 			   i = card_yuepiao_process();
@@ -4437,16 +4458,18 @@ INT8U ic_yuepiaocard_process(void)
 		if ( i != ok )
 			continue;
 
-		(void)Get_Time(&ltime);
-		memcpy(&DevStat.sell_ticket_time.century, &ltime.century, sizeof(BUS_TIME));
-		sprintf((void *)&DevStat.sell_ticket_times[0], "%02X%02X%02X%02X%02X%02X%02X",
-				ltime.century, ltime.year, ltime.month, ltime.day, ltime.hour, ltime.minute, ltime.second);
-
-		generate_ticket_info();                 //生成记录
-		store_record(&Tinfo.pos_number[0]);     //储存记录
-		//刷卡成功 跳出循环
 		break;
+		
 	}
+
+	(void)Get_Time(&ltime);
+	memcpy(&DevStat.sell_ticket_time.century, &ltime.century, sizeof(BUS_TIME));
+	sprintf((void *)&DevStat.sell_ticket_times[0], "%02X%02X%02X%02X%02X%02X%02X",
+			ltime.century, ltime.year, ltime.month, ltime.day, ltime.hour, ltime.minute, ltime.second);
+
+	generate_ticket_info();                 //生成记录
+	store_record(&Tinfo.pos_number[0]);     //储存记录
+	
 
 	(void)EA_ucCloseDevice(&hRS232Handle);
 
@@ -4479,7 +4502,7 @@ INT8U ic_card_process(void)
 	INT8U key = 0;
 
 	EA_vCls();
-	lcddisp(1, 1, (void *)"      请刷卡..      ");
+	lcddisp(1, 1, (void *)"    请刷优惠卡..    ");
 
 	//打开RS232设备
 	ucResult = EA_ucOpenDevice("COM1", EM_io_RDWR, &hRS232Handle);
@@ -4498,21 +4521,14 @@ INT8U ic_card_process(void)
 	}
 
 
-	for(;;)
+	for( ;; )
 	{
-		key = EA_ucKBHit();
-		if ( key == EM_key_HIT )    //有按键
-		{
-			key = EA_uiInkey(1);    //读取按键键值
-			if ( key == EM_key_CANCEL )
-				return notok;       //退出
-		}
-
 		//找卡
 		memcpy(Com1SndBuf, "\xAA\x05\x00", 3);
 		i = com1_snd_and_rcv(Com1SndBuf, 3, (void *)Com1RcvBuf, &rcv_len, 1000, 10);
 		if ( i == 0x01 )
 		{
+			(void)EA_ucCloseDevice(&hRS232Handle);
 			return notok;			//按取消键退出
 		}
 		if ( i != ok )
@@ -4581,6 +4597,12 @@ INT8U ic_card_process(void)
 		CardInfo.valid_time.minute = 0x00;
 		CardInfo.valid_time.second = 0x00;
 
+		strcpy((void *)&DevStat.start_station_number[0], (char *)"");
+		strcpy((void *)&DevStat.start_station_name[0], (char *)"");
+
+		strcpy((void *)&DevStat.end_station_number[0], (char *)"");
+		strcpy((void *)&DevStat.end_station_name[0], (char *)"");
+
 		(void)Get_Time(&CardInfo.card_in_time);
 //		memcpy((void *)&CardInfo.card_in_time, (void *)&time, sizeof(BUS_TIME));
 
@@ -4594,9 +4616,10 @@ INT8U ic_card_process(void)
 			   i = card_youhui_process();
 			   break;
 
-		   case CARDT_YUEPIAO:		//月票卡
-			   i = card_yuepiao_process();
-			   break;
+//           case CARDT_YUEPIAO:      //月票卡
+////  		   i = card_yuepiao_process();
+//               i = notok;
+//               break;
 
 		   default:                //卡类型错误
 			   lcddisp(2, 1, (void *)"    卡类型错误!!    ");
@@ -4700,7 +4723,7 @@ INT8U card_youhui_process(void)
 //		memcpy(&CardInfo._CARD_NUMBER.detail_card_number.serial_number[0], &Com1RcvBuf[3], 4);
 //		CardInfo.card_purchase_type = Com1RcvBuf[3];
 
-		DevStat.ticket_type = '7';
+		DevStat.ticket_type = '9';
 		CardInfo.card_purchase_type = 0x06;
 		memcpy(&CardInfo.balance, &Com1RcvBuf[8], 4);
 		strcpy((void *)&DevStat.prices[0], (void *)prices_tmp);
@@ -4718,7 +4741,7 @@ INT8U card_youhui_process(void)
 		}
 
 		beep_success();
-		sleep_ms(8000);
+		sleep_ms(5500);
 		return ok;
 	}
 	else
@@ -4775,10 +4798,8 @@ INT8U card_yuepiao_process(void)
 		//在有效期内，不扣钱
 		//只能按照对应的金额进行消费刷卡 ,, frank 14年10月18号
 		//取票价
-//  	pricef = atof((void *)&DevStat.prices[0]);
 		CardInfo.fare = 0;
 		CardInfo.balance = 0;			//金额和卡内余额都是0
-
 //  	memset((void *)&DevStat.prices[0], 0x00, 8);                    //票价为0.00元
 		sprintf((void *)&DevStat.prices[0], "%.2f", 0.00);
 		DevStat.ticket_amount = 1;										//张数为1
@@ -4872,7 +4893,8 @@ INT8U card_yuepiao_process(void)
 			}
 
 			beep_success();
-			sleep_ms(8000);
+
+			sleep_ms(5500);
 			return ok;
 		}
 		else
