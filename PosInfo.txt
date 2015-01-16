@@ -4,11 +4,17 @@
 
 main.c
 
+<<<<<<< HEAD
 链接中...
 
 链接成功!
 
 .pkg包文件创建成功!
+=======
+
+
+main.o - 0 error(s), 0 warning(s)
+>>>>>>> a74780db1565dfbb005ca84306c9ad0664d4c8e5
 
 
 

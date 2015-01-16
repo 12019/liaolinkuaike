@@ -4775,10 +4775,8 @@ INT8U card_yuepiao_process(void)
 		//在有效期内，不扣钱
 		//只能按照对应的金额进行消费刷卡 ,, frank 14年10月18号
 		//取票价
-//  	pricef = atof((void *)&DevStat.prices[0]);
 		CardInfo.fare = 0;
 		CardInfo.balance = 0;			//金额和卡内余额都是0
-
 //  	memset((void *)&DevStat.prices[0], 0x00, 8);                    //票价为0.00元
 		sprintf((void *)&DevStat.prices[0], "%.2f", 0.00);
 		DevStat.ticket_amount = 1;										//张数为1
@@ -4872,6 +4870,7 @@ INT8U card_yuepiao_process(void)
 			}
 
 			beep_success();
+
 			sleep_ms(8000);
 			return ok;
 		}
